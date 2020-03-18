@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.port || 5000;
 const vision = require('@google-cloud/vision');
 const client = new vision.ImageAnnotatorClient(
   {
@@ -38,4 +39,4 @@ async function quickstart() {
     console.error(e);
   }
 
-app.listen(5000, '127.0.0.1', ()=> console.log('Server Running Okay...'));
+app.listen(port, '127.0.0.1', ()=> console.log(`Server Running Okay On ${port}`));
