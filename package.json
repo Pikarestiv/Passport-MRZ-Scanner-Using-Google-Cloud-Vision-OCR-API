@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/vision": "^1.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mrz": "^3.1.0",
     "nodemon": "^2.0.1"
   }
